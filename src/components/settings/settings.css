@@ -1,0 +1,42 @@
+.settings {
+color: rgb(255, 217, 0);
+font-size: 20px;
+  flex-wrap: wrap;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  height: 800px;
+  margin: 50px auto;
+
+  background-image: url("../../img/mainsettings.jpg");
+  background-repeat: no-repeat;          /* чтобы не повторялось */
+  background-size: cover;                /* масштабирует, сохраняя пропорции, чтобы заполнить контейнер */
+  background-position: center center;   /* центрирует изображение */
+
+  box-shadow: 0 0 50px 30px rgba(0, 0, 0, 0.5);
+  cursor: url("images/aim.svg"), pointer;
+}
+
+select {
+  
+  padding: 10px; /* Отступы внутри элемента */
+  border: 2px solid #ccc; /* Цвет и толщина границы */
+  border-radius: 40px; /* Закругление углов */
+  background-color: #7e1e1e; /* Цвет фона */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Курсор при наведении */
+  transition: border-color 0.3s; /* Плавный переход для изменения цвета границы */
+}
+
+/* Изменение цвета границы при фокусировке */
+select:focus {
+  border-color: #007bff41; /* Цвет границы при фокусе */
+  outline: none; /* Убираем стандартное обводка при фокусе */
+}
+
+.btn_settings {
+  height: 50px;
+}
+.btn_settings:hover {
+color: rgb(255, 217, 0);
+}

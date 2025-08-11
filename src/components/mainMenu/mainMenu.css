@@ -1,0 +1,73 @@
+.wrapper {
+    position: relative;
+  /* display: flex; */
+  flex-wrap: wrap;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  height: 800px;
+  margin: 50px auto;
+
+  background-image: url("../../img/mainmenu.jpg");
+  background-repeat: no-repeat;          /* чтобы не повторялось */
+  background-size: cover;                /* масштабирует, сохраняя пропорции, чтобы заполнить контейнер */
+  background-position: center center;   /* центрирует изображение */
+
+  box-shadow: 0 0 50px 30px rgba(0, 0, 0, 0.5);
+  cursor: url("images/aim.svg"), pointer;
+}
+
+/* .main-container {
+    transform: translateY(100%);
+} */
+ 
+.main-title {
+  
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-menu {
+     position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  gap: 10px;
+}
+ 
+.main-menu .main-menu--btn:first-of-type {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.main-menu .main-menu--btn:last-of-type {
+
+padding: 5px;
+}
+.main-menu--btn {
+    margin-top: 20px;
+    height: 30px;
+    min-width: 300px;
+ 
+   font-size: 30px;
+    padding: 0;
+    background-color: rgba(53, 2, 2, 0);
+    border: 0;
+ 
+    color: white;
+}
+.main-menu--btn:hover {
+  color: rgba(255, 0, 0, 0.589);
+}
+
+.main-menu--btn:disabled {
+  opacity: 0.8;           /* сделать полупрозрачной */
+  cursor: not-allowed;    /* курсор запрещён */
+
+  color: #000000fb;            /* серый текст */
+  /* другие стили по желанию */
+}
