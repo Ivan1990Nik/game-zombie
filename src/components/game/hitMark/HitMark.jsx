@@ -20,7 +20,7 @@ const HitMark = ({weapon}) => {
 
   return (
     
-<div>
+<div >
   {setWeapon}
 </div>
 )
