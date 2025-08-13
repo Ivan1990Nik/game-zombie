@@ -71,3 +71,11 @@ padding: 5px;
   color: #000000fb;            /* серый текст */
   /* другие стили по желанию */
 }
+@media (max-width: 600px) {
+  .wrapper {
+
+  width: 100%;
+/* height: 800px; */
+}
+
+}

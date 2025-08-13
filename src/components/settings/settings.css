@@ -40,3 +40,12 @@ select:focus {
 .btn_settings:hover {
 color: rgb(255, 217, 0);
 }
+
+@media (max-width: 600px) {
+  .settings {
+
+  width: 100%;
+/* height: 800px; */
+}
+
+}
