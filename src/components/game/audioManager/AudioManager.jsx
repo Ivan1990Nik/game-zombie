@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import soundBu from "../../../sound/bu.mp3";
 import soundShot from "../../../sound/shot.mp3";
 import katanaShot from "../../../sound/katanablood.mp3";
+import magnumShot from "../../../sound/magnumShot.mp3";
 
 const AudioManager = ({ soundOn, playShotSound, weapon }) => {
   const buAudioRef = useRef(null);
@@ -12,6 +13,8 @@ const AudioManager = ({ soundOn, playShotSound, weapon }) => {
     // Обновляем звук выстрела в зависимости от weapon
     if (weapon === "katana") {
       setCurrentShotSound(katanaShot);
+    } else if (weapon === "magnum") {
+      setCurrentShotSound(magnumShot);
     } else {
       setCurrentShotSound(soundShot);
     }
